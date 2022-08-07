@@ -1,0 +1,115 @@
+.contact{
+    background-image: url('../images/register_bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-family: 'montserrat';
+
+    @include breakpoint(ipad-max) {
+            height: auto;
+    }    
+
+    &__block{
+        display: flex;
+        flex-wrap: nowrap;
+        height: 100%;
+        justify-content: space-around;
+
+        @include breakpoint(ipad-max) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__block-right{
+        align-self: flex-end;
+        background-color: white;
+        height: 560px;
+        width: 726px;
+        margin-top: 205.8px;
+
+        @include breakpoint(ipad-max) {
+            background-color: transparent;
+            margin-top: 45px;
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__block-left{
+        height: 260px;
+        width: 477px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 5px 5px#707070;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+
+        @include breakpoint(medium-large-desktop-max-desktop-min){
+            padding: 0 20px;
+            margin: 20px;
+        }
+        @include breakpoint(ipad-max){
+            margin-top: 184px;
+            width: 75%;
+            height: auto;
+            padding: 30px;
+        }
+    }
+    .contact__form{
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+
+        @include breakpoint(ipad-max) {
+            width: 100%;
+        }
+
+        &-label{
+            font-size: 13px;
+            margin-bottom: 13px;
+            font-weight: 500;
+            color: #494949;
+        }
+        &-field{
+            padding: 16px 14px 15px 14px;
+            font-size: 14px;
+            border: 1px solid #58545445;
+            font-weight: 500;
+
+             @include breakpoint(mobile-m){
+                padding: 16px 6px 15px 8px;
+            }
+        }
+        &-field:focus{
+            outline: none;
+            border: 1px solid #707070;
+        }
+        &-submitbtn{
+            margin-top: 19px;
+            height: 37px;
+            color: #FFFFFF;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            background-color: #F58025;
+        }
+        &-submitbtn:hover{
+            border: 1px solid #F58025;
+            color: #F58025;
+            background-color: transparent;
+        }
+        &-anchorblock{
+            margin-top: 18px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-anchorblock-text{
+            text-decoration: none;
+            font-size: 13px;
+            text-transform: capitalize;
+            font-weight: 500;
+            color: #494949;
+        }
+    }
+}

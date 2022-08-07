@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VMX Hosted Private Cloud">
+    <meta name="keywords" content="VMX, hosting server, cloud">
+    <title>VMX | Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="register">
+        <img src="../images/logo.svg" alt="logo" class="logo_img_resetpass">
+        <div class="register__block">
+            <div class="register__block-left">
+                <form action="#" class="register__form">
+                    <label for="name" class="register__form-label">First Name*</label>
+                    <input type="text" class="register__form-field" name="first_name" id="user_fname" placeholder="John" required>
+                    <label for="last_name" class="register__form-label">Last Name*</label>
+                    <input type="text" class="register__form-field" name="last_name" id="user_lname" placeholder="Doe" required>
+                    <label for="mobile_no" class="register__form-label">Mobile Number*</label>
+                    <input type="number" class="register__form-field" name="mobile_no" id="user_mobileno" placeholder="8467823812" min="10" max="10" required>
+                    <label for="email" class="register__form-label">Email*</label>
+                    <input type="email" class="register__form-field" name="user_email" id="user_email" placeholder="Johndoe@gmail.com" required>
+                    <label for="password" class="register__form-label">Password*</label>
+                    <input type="password" class="register__form-field" name="user_password" id="user_password" placeholder="***************" required>
+                    <label for="coupon_code" class="register__form-label">Coupon Code*</label>
+                    <input type="text" class="register__form-field" name="coupon_code" id="coupon_code" placeholder="RENQNX" required>
+                    <label for="term_condition" class="register__form-label--check"><input type="checkbox" class="register__form-checkbox">I accept all the terms and conditions</label>
+                    <label for="subscribe" class="register__form-label--check"><input type="checkbox" class="register__form-checkbox">Subscribe to our newsletter for latest updates</label>
+                    <button type="submit" class="register__form-submitbtn">Submit</button>
+                    <div class="register__form-anchorblock">
+                        <a href="#" class="register__form-anchorblock-text">Already have an account?</a>
+                    </div>
+                </form>
+            </div>
+            <!-- <div class="register__block-right"></div> -->
+            <img class="register__block-right" src="../images/register.svg" alt="register">
+        </div>  
+    </div>
+</body>
+</html>

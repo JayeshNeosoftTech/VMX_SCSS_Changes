@@ -1,0 +1,38 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.container{
+    width: 93%;
+    margin: 0 auto;
+    @include breakpoint(medium-large-desktop-min) {
+        max-width: 1366px;
+        margin: 0 auto;
+        width: auto;
+    }
+}
+.logo_img{
+    height: 34.5px;
+    width: 83.85px;
+    margin: 35px 0px 0px;
+}
+.logo_img_resetpass{
+    height: 34.5px;
+    width: 83.85px;
+    margin: 35px 3.5% 0px;
+}
+span.fa.fa-angle-right{
+    margin: 0px 0px 2px 1px;
+    font-weight: bold;
+}
+span.fa.fa-angle-left{
+    margin: 0px 3px 2px 0px;
+    font-weight: bold;
+}

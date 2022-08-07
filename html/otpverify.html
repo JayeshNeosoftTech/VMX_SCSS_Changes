@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VMX Hosted Private Cloud">
+    <meta name="keywords" content="VMX, hosting server, cloud">
+    <title>VMX | OTP Verification</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="otpverify">
+        <img src="../images/logo.svg" alt="logo" class="logo_img_resetpass">
+        <div class="otpverify__block">
+            <div class="otpverify__block-left">
+                <form action="#" class="otpverify__form">
+                    <label for="Password" class="otpverify__form-label">Please Enter the OTP to verify your account</label>
+                    <div class="otpverify__form-inputgroup">
+                        <input type="text" class="otpverify__form-field" id="digit-1" name="digit-1" data-next="digit-2" />
+                        <input type="text" class="otpverify__form-field" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                        <input type="text" class="otpverify__form-field" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                        <input type="text" class="otpverify__form-field" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+                        <input type="text" class="otpverify__form-field" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+                        <input type="text" class="otpverify__form-field" id="digit-6" name="digit-6" data-previous="digit-5" />
+                    </div>
+                    <button type="submit" class="otpverify__form-submitbtn">Verify</button>
+                    <div class="otpverify__form-anchorblock">
+                        <a href="#" class="otpverify__form-anchorblock-text">Resend OTP</a><p class="otpverify__form-anchorblock-timer"> in <span>59</span> sec</p>
+                    </div>
+                </form>
+            </div>
+            <div class="otpverify__block-right"></div>
+        </div>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Custom Javascript -->
+    <script src="../js/vmx_script.js"></script>
+</body>
+</html>

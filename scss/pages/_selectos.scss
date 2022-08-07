@@ -1,0 +1,201 @@
+.selectos{
+    width: 100%;
+    background-image: url('../images/server_bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 172px;
+    font-family: 'montserrat';
+
+    @include breakpoint(ipad-max) {
+        padding-bottom: 100px;
+    }
+    &__block{
+        height: 100%;
+        .selectos__content{
+            margin: 102.5px 0px 0px 0px;
+
+            &_heading{
+                font-size: 35px;
+                font-weight: 700;
+                color: #494949;
+
+                 @include breakpoint(mobile-max) {
+                    font-size: 30px;
+                }
+            }
+            &_filter-list{
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+                margin-top: 35px;
+                gap: 5%;
+            }
+            &_filterbtn{
+                font-size: 24px;
+                color: #434343;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                font-weight: 500;
+
+                &:hover{
+                    color: #F28A49;
+                }
+                 @include breakpoint(desktop-mid) {
+                    margin-top: 10px;
+                }
+                 @include breakpoint(mobile-max) {
+                    font-size: 22px;
+                }
+            }
+            &_filterbtn--all{
+                font-size: 24px;
+                background-color: transparent;
+                border: none;
+                color: #F28A49;
+                cursor: pointer;
+                font-weight: 500;
+
+                 @include breakpoint(desktop-mid) {
+                    margin-top: 10px;
+                }
+                 @include breakpoint(mobile-max) {
+                    font-size: 22px;
+                }
+            }
+            &_version{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 35px;
+
+                &-contentone, &-contenttwo{
+                    background-color: #FFFFFF;
+                    border-radius: 10px;
+                    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+                    padding: 30px 42px;
+                    position: relative;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #F58025;
+                    }
+
+                     @include breakpoint(desktop-mid) {
+                        width: fit-content;
+                        padding: 30px 20px;
+                    }
+                     @include breakpoint(mobile-max) {
+                        padding: 30px;
+                    }
+                     @include breakpoint(portrait-mobile-mid) {
+                        padding: 20px 15px;
+                        width: auto;
+                    }
+                }
+                &-contenttwo{
+                    margin-left: 61px;
+
+                    &:hover{
+                        background-color: #F58025;
+                    }
+                    @include breakpoint(ipad-max) {
+                        margin-left: 0px;
+                    }
+                     @include breakpoint(mobile-max) {
+                        margin-top: 40px;
+                    }
+                }
+                &-pills{
+                    right: 0;
+                    border: 1px solid #707070;
+                    border-radius: 40px;
+                    padding: 6px 15px;
+                    font-size: 12px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #707070;
+                    background-color: #FFFFFF;
+                    float: right;
+                    margin-right: 15%;
+                    position: absolute;
+                    font-weight: 500;
+
+                     @include breakpoint(desktop-mid) {
+                        margin-right: 10%;
+                    }
+                     @include breakpoint(mobile-max) {
+                        font-size: 10px;
+                    }
+                     @include breakpoint(portrait-mobile-mid) {
+                        margin-right: 5%;
+                    }
+                }
+                &-contentone_heading, &-contenttwo_heading{
+                    font-size: 24px;
+                    margin-top: 11px;
+                    font-weight: 500;
+                    color: #434343;
+                    font-weight: 600;
+
+                     @include breakpoint(mobile-max) {
+                        font-size: 22px;
+                    }
+                }
+                &-contentone_subheading, &-contenttwo_subheading{
+                    font-size: 24px;
+                    margin-top: 24px;
+                    font-weight: 500;
+                    color: #434343;
+                    font-weight: 500;
+
+                     @include breakpoint(mobile-max) {
+                        font-size: 22px;
+                    }
+                }
+                &-selectversion{
+                    border: 1px solid #707070;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    margin-top: 22px;
+                    padding: 11px 76px 11px 14px;
+                    color: #494949;
+                    font-weight: 500;
+                    background-image: url('../images/select_arrow.png');
+                    background-position: 95%;
+                    background-repeat: no-repeat;
+                    appearance: none;
+
+                    @include breakpoint(ipad-max) {
+                        padding: 11px 40px 11px 5px;
+                        background-position: 96%;
+                    }
+                     @include breakpoint(mobile-max) {
+                        font-size: 18px;
+                        padding: 11px 76px 11px 14px;
+                    }
+                     @include breakpoint(portrait-mobile-mid) {
+                        padding: 11px 40px 11px 10px;
+                    }
+                     @include breakpoint(mobile-m) {
+                        font-size: 16px;
+                    }
+                }
+
+                @include breakpoint(ipad-max) {
+                    justify-content: space-evenly;
+                }
+            }
+            .selectos__content_version-contentone:hover .selectos__content_version-pills, .selectos__content_version-contenttwo:hover .selectos__content_version-pills{
+                border-color: #F28A49;
+                color: #F58025;
+            }
+            .selectos__content_version-contentone:hover .selectos__content_version-contentone_heading, .selectos__content_version-contenttwo:hover .selectos__content_version-contenttwo_heading{
+                color: #FFFFFF;
+                font-weight: 700;
+            }
+            .selectos__content_version-contentone:hover .selectos__content_version-contentone_subheading, .selectos__content_version-contenttwo:hover .selectos__content_version-contenttwo_subheading{
+                color: #FFFFFF;
+            }
+        }
+    }
+
+}
