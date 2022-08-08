@@ -9,6 +9,30 @@
         position: relative;
         height: 100%;
 
+        &-selectloc{
+            position: absolute;
+            top: 64px;
+            right: 5%;
+            border: 1px solid #CFD4D9;
+            font-size: 14px;
+            padding: 16px 114px 15px 24px;
+            background-color: #FFFFFF;
+            color: #575757;
+            font-weight: 500;
+            background-image: url(../images/android-arrow-dropdown.svg);
+            background-position: 90%;
+            background-repeat: no-repeat;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            @include breakpoint(mobile-mid) {
+                padding: 14px 50px 13px 18px;
+            }
+            @include breakpoint(mobile-max) {
+                font-size: 12px;
+            }
+        }
         .os__slider_nextarrow, .os__slider_prevarrow{
             width: 45px;
             height: 45px;
@@ -27,7 +51,7 @@
             top: 52%;
             right: 0%;
 
-             @include breakpoint(ipad-mid) {
+            @include breakpoint(ipad-mid) {
                 top: 55%;
             }
              @include breakpoint(mobile-max) {

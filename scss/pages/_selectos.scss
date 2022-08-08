@@ -11,6 +11,44 @@
     }
     &__block{
         height: 100%;
+        position: relative;
+        &-selectgroup{
+            position: absolute;
+            right: 0%;
+            top: 75px;
+            display: flex;
+
+            @include breakpoint(portrait-mobile-max) {
+                flex-direction: column;
+                top: 65px;
+            }
+        }
+        &-select{
+            border: 1px solid #CFD4D9;
+            font-size: 14px;
+            margin-right: 32px;
+            padding: 16px 81px 15px 23px;
+            background-color: #FFFFFF;
+            color: #575757;
+            font-weight: 500;
+            background-image: url(../images/android-arrow-dropdown.svg);
+            background-position: 90%;
+            background-repeat: no-repeat;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            @include breakpoint(mobile-mid) {
+                padding: 14px 50px 13px 18px;
+            }
+            @include breakpoint(mobile-max) {
+                font-size: 12px;
+            }
+            @include breakpoint(portrait-mobile-max) {
+                margin-bottom: 10px;
+            }
+        }
+
         .selectos__content{
             margin: 102.5px 0px 0px 0px;
 

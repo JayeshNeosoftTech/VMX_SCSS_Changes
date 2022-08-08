@@ -4,7 +4,6 @@
     background-size: cover;
     width: 100%;
     font-family: 'montserrat';
-    padding: 0px 23px;
 
     @include breakpoint(medium-large-desktop-min) {
         max-width: 1366px;
@@ -69,7 +68,7 @@
             margin: 20px;
         }
         @include breakpoint(ipad-max){
-            margin-top: 184px;
+            margin-top: 120px;
             width: 75%;
             height: auto;
             padding: 35px 54px 21px;

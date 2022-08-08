@@ -4,7 +4,7 @@
     background-size: cover;
     width: 100%;
     font-family: 'montserrat';
-    padding: 0px 23px;
+
 
     @include breakpoint(medium-large-desktop-min) {
         max-width: 1366px;
@@ -35,6 +35,9 @@
             background-color: transparent;
             margin-top: 45px;
             width: 95%;
+            img{
+                width: 100%;
+            }
         }
     }
     &__block-left{
@@ -59,7 +62,6 @@
         }
         @include breakpoint(mobile-l){
             padding: 24px 20px 33px;
-            width: 95%;
         }
     }
     .register__form{

@@ -1,0 +1,294 @@
+.myserver{
+    background-image: url('../images/register_bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-family: 'montserrat';
+
+    @include breakpoint(medium-large-desktop-min) {
+        max-width: 1366px;
+        margin: 0 auto;
+        width: auto;
+    }
+    @include breakpoint(ipad-max) {
+            height: auto;
+    }
+
+    &__block{
+        margin: 34.5px 0px 0px;
+        display: flex;
+        flex-wrap: nowrap;
+        /* height: fit-content; */
+        width: 100%;
+        justify-content: space-between;
+
+        @include breakpoint(ipad-max) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+
+    &__block-right{
+        align-self: flex-end;
+        @include breakpoint(ipad-max) {
+            background-color: transparent;
+            margin-top: 45px;
+            width: 95%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &__block-left{
+        background-color: #FFFFFF;
+        box-shadow: 0px 5px 6px rgba(0,0,0, 0.16);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        padding: 20px 52px 40px;
+        margin-bottom: 45px;
+        margin-left: 10%;
+
+        @include breakpoint(ipad-max){
+            width: 75%;
+            height: auto;
+            margin-left: 0%;
+        }
+        @include breakpoint(portrait-mobile-max){
+            width: 90%;
+            padding: 20px 20px 40px;
+        }
+    }
+    .myserver__form{
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+
+        @include breakpoint(ipad-max) {
+            width: 100%;
+        }
+
+        &-label{
+            font-size: 18px;
+            font-weight: 600;
+            color: #494949;
+            @include breakpoint(mobile-max) {
+                font-size: 16px;
+            }
+
+            &--ql{
+                font-size: 14px;
+                font-weight: 500;
+                color: #575757;
+                margin: 0px 0px 23px 23px;
+                padding-bottom: 2px;
+
+                @include breakpoint(mobile-max) {
+                    font-size: 12px;
+                }
+
+                span{
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin: 2px 6px 0px 24px;
+                    vertical-align: middle;
+                    position: relative;
+                    bottom: 2px;
+                    @include breakpoint(mobile-max) {
+                        font-size: 22px;
+                    }
+                }
+            }
+            &--plan{
+                font-size: 13px;
+                font-weight: 500;
+                margin: 0px 0px 16px;
+                color: #494949;
+            }
+        }
+        .ql-btn{
+            margin: 0px 0px 0px 18px;
+            width: 34px;
+            height: 32px;
+            font-size: 24px;
+            font-weight: 500;
+            background-color: #FFFFFF;
+            color: #CFD4D9;
+            border: 1px solid #CFD4D9;
+            vertical-align: middle;
+            bottom: 3px;
+            position: relative;
+            cursor: pointer;
+            &:hover{
+                border: 1px solid #afb5bb;
+                color: #afb5bb;
+            }
+
+            @include breakpoint(mobile-max) {
+                font-size: 22px;
+                width: 32px;
+                height: 30px;
+            }
+        }
+        &-field_id{
+            margin-top: 29px;
+            border: 1px solid #CFD4D9;
+            background-color: #FFFFFF;
+            padding: 16px 23px 15px;
+            font-size: 14px;
+            font-weight: 500;
+            &::placeholder{
+                color: #93999E;
+            }
+
+            @include breakpoint(mobile-max) {
+                font-size: 12px;
+            }
+        }
+        &-field{
+            margin: 16px 0px 25px;
+            height: 97px;
+            padding: 16px 23px;
+            font-size: 14px;
+            border: 1px solid #CFD4D9;
+            font-weight: 500;
+            &::placeholder{
+                color: #93999E;
+            }
+
+            @include breakpoint(mobile-max) {
+                font-size: 12px;
+            }
+             @include breakpoint(mobile-m){
+                padding: 16px 6px 15px 8px;
+            }
+        }
+        &-field:focus{
+            outline: none;
+            border: 1px solid #707070;
+        }
+        &-selectgroup{
+            display: flex;
+            justify-content: space-between;
+
+            @include breakpoint(mobile-l) {
+                flex-direction: column;
+            }
+        }
+        &-select{
+            border: 1px solid #CFD4D9;
+            font-size: 14px;
+            margin-bottom: 16px;
+            padding: 16px 18% 15px 23px;
+            background-color: #FFFFFF;
+            color: #575757;
+            font-weight: 500;
+            background-image: url(../images/android-arrow-dropdown.svg);
+            background-position: 90%;
+            background-repeat: no-repeat;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            @include breakpoint(mobile-max) {
+                font-size: 12px;
+            }
+        }
+        &-btngroup{
+            display: flex;
+            justify-content: space-between;
+            .plan-btn{
+                color: #2980C9;
+                font-size: 16px;
+                font-weight: 500;
+                background-color: #FFFFFF;
+                border: 0.5px solid rgba(207, 212, 217, 0.66);
+                box-shadow: 0px 3px 6px rgba(0,0,0, 0.16);;
+                cursor: pointer;
+
+                @include breakpoint(mobile-max) {
+                    font-size: 14px;
+                }
+
+                span{
+                    display: block;
+                    font-weight: 300;
+                    font-size: 14px;
+
+                    @include breakpoint(mobile-max) {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .plan-btn:nth-child(1){
+                padding: 16px 15px 16.7px;
+
+                @include breakpoint(mobile-l-max) {
+                    padding: 16px 10px 14.7px;
+                }
+            }
+            .plan-btn:nth-child(2){
+                padding: 16px 18.5px 16.7px 17.5px;
+                @include breakpoint(mobile-l-max){
+                    padding: 16px 14px 16.7px 13px;
+                }
+            }
+            .plan-btn:nth-child(3){
+                padding: 16px 25px 16.7px;
+                @include breakpoint(mobile-l-max){
+                    padding: 16px 18px 16.7px;
+                }
+            }
+        }
+        &-discount{
+            margin: 25.3px 0px 13.5px;
+            padding: 0px 19px 0px 14px;
+            display: flex;
+            justify-content: space-between;
+            label{
+                font-weight: 500;
+                font-size: 13px;
+                color: #494949;
+            }
+            span{
+                font-size: 18px;
+                font-weight: 600;
+                color: #2980C9;
+
+                @include breakpoint(mobile-max) {
+                    font-size: 16px;
+                }
+            }
+        }
+        &-breakline{
+            height: 0.5px;
+            background-color: #707070;
+        }
+        &-total{
+            margin-top: 16.5px;
+            padding-right: 17.5px;
+            display: flex;
+            justify-content: space-between;
+            label{
+                color: #494949;
+                font-size: 18px;
+                font-weight: 500;
+
+                @include breakpoint(mobile-max) {
+                    font-size: 16px;
+                }
+            }
+            span{
+                font-size: 20px;
+                font-weight: 600;
+                color: #2980C9;
+
+                @include breakpoint(mobile-max) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
