@@ -797,6 +797,475 @@
     </div>
     <!-- Plan div end -->
 
+    <!-- Forgot Password start -->
+        <div class="forgotpass">
+            <img src="../images/logo.svg" alt="logo" class="logo_img_resetpass">
+            <div class="forgotpass__block">
+                <div class="forgotpass__block-left">
+                    <form action="#" class="forgotpass__form">
+                        <label for="email" class="forgotpass__form-label">Forgot Your Password?</label>
+                        <input type="email" class="forgotpass__form-field" name="email_id" id="user_email" placeholder="email@domain.com" required>
+                        <button type="submit" class="forgotpass__form-submitbtn">Send Reset Link</button>
+                        <div class="forgotpass__form-anchorblock">
+                            <a href="#" class="forgotpass__form-anchorblock-text">Back to Login</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="forgotpass__block-right"></div>
+            </div>  
+        </div>
+    <!-- Forgot Password end -->
+
+    <!-- OTP verification start -->
+        <div class="otpverify">
+            <img src="../images/logo.svg" alt="logo" class="logo_img_resetpass">
+            <div class="otpverify__block">
+                <div class="otpverify__block-left">
+                    <form action="#" class="otpverify__form">
+                        <label for="Password" class="otpverify__form-label">Please Enter the OTP to verify your account</label>
+                        <div class="otpverify__form-inputgroup">
+                            <input type="text" class="otpverify__form-field" id="digit-1" name="digit-1" data-next="digit-2" />
+                            <input type="text" class="otpverify__form-field" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                            <input type="text" class="otpverify__form-field" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                            <input type="text" class="otpverify__form-field" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+                            <input type="text" class="otpverify__form-field" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+                            <input type="text" class="otpverify__form-field" id="digit-6" name="digit-6" data-previous="digit-5" />
+                        </div>
+                        <button type="submit" class="otpverify__form-submitbtn">Verify</button>
+                        <div class="otpverify__form-anchorblock">
+                            <a href="#" class="otpverify__form-anchorblock-text">Resend OTP</a><p class="otpverify__form-anchorblock-timer"> in <span>59</span> sec</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="otpverify__block-right"></div>
+            </div>
+        </div>
+    <!-- OTP verification end -->
+
+    <!-- Reset Password start -->
+        <div class="resetpass">
+            <img src="../images/logo.svg" alt="logo" class="logo_img_resetpass">
+            <div class="resetpass__block">
+                <div class="resetpass__block-left">
+                    <form action="#" class="resetpass__form">
+                        <label for="Password" class="resetpass__form-label">Reset Your Password</label>
+                        <input type="password" class="resetpass__form-field" name="password" id="user_new-password" placeholder="New Password" required>
+                        <input type="password" class="resetpass__form-field" name="password" id="user_con-password" placeholder="Confirm New Password" required>
+                        <button type="submit" class="resetpass__form-submitbtn">Submit</button>
+                        <div class="resetpass__form-anchorblock">
+                            <a href="#" class="resetpass__form-anchorblock-text">Back to Login</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="resetpass__block-right"></div>
+            </div>
+        </div>
+    <!-- Reset Password end -->
+
+    <!-- Register start -->
+        <div class="register">
+            <img src="../images/logo.svg" alt="logo" class="logo_img_resetpass">
+            <div class="register__block">
+                <div class="register__block-left">
+                    <form action="#" class="register__form">
+                        <label for="name" class="register__form-label">First Name*</label>
+                        <input type="text" class="register__form-field" name="first_name" id="user_fname" placeholder="John" required>
+                        <label for="last_name" class="register__form-label">Last Name*</label>
+                        <input type="text" class="register__form-field" name="last_name" id="user_lname" placeholder="Doe" required>
+                        <label for="mobile_no" class="register__form-label">Mobile Number*</label>
+                        <input type="number" class="register__form-field" name="mobile_no" id="user_mobileno" placeholder="8467823812" min="10" max="10" required>
+                        <label for="email" class="register__form-label">Email*</label>
+                        <input type="email" class="register__form-field" name="user_email" id="user_email" placeholder="Johndoe@gmail.com" required>
+                        <label for="password" class="register__form-label">Password*</label>
+                        <input type="password" class="register__form-field" name="user_password" id="user_password" placeholder="***************" required>
+                        <label for="coupon_code" class="register__form-label">Coupon Code*</label>
+                        <input type="text" class="register__form-field" name="coupon_code" id="coupon_code" placeholder="RENQNX" required>
+                        <label for="term_condition" class="register__form-label--check"><input type="checkbox" class="register__form-checkbox">I accept all the terms and conditions</label>
+                        <label for="subscribe" class="register__form-label--check"><input type="checkbox" class="register__form-checkbox">Subscribe to our newsletter for latest updates</label>
+                        <button type="submit" class="register__form-submitbtn">Submit</button>
+                        <div class="register__form-anchorblock">
+                            <a href="#" class="register__form-anchorblock-text">Already have an account?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="register__block-right"><img src="../images/register.svg" alt="register"></div>
+            </div>  
+        </div>
+    <!-- Register end -->
+
+    <!-- OS changes start -->
+        <div class="os">
+            <div class="os__block container">
+                <img src="../images/logo.svg" alt="logo" class="logo_img">
+                <select name="os__block-select" id="os__block-selectloc" class="os__block-selectloc">
+                    <option value="location">Location</option>
+                    <option value="location">Location</option>
+                    <option value="location">Location</option>
+                </select>
+                <div class="os__content">
+                    <h2 class="os__content_heading">Select Your Operating System</h2>
+                    <ul class="os__content_filter-list">
+                        <li><button class="os__content_filterbtn" onclick="os_btn()">Popular(4)</button></li>
+                        <li><button class="os__content_filterbtn" onclick="os_btn()">For Containers</button></li>
+                        <li><button class="os__content_filterbtn" onclick="os_btn()">VMWare/ESXi(1)</button></li>
+                        <li><button class="os__content_filterbtn" onclick="os_btn()">Licensed(2)</button></li>
+                        <li><button class="os__content_filterbtn--all" id="active_btn" onclick="os_btn_all()">All(11)</button></li>
+                    </ul>
+                    <!-- Carousel code start -->
+                    <div class="owl-carousel os__slider">
+                        <div class="os__sliderwrapper os__sliderwrapper_active">
+                            <div class="os__slider_content">
+                                <img src="../images/Aima.png" alt="aima_logo" class="os__slider_logoimg" id="aima_img">
+                                <div class="os__slider_description">
+                                    <h2 class="os__slider_heading">Aima</h2>
+                                    <div class="os__slider_hrline"></div>
+                                    <p class="os__slider_versionpara">Version</p>
+                                    <p class="os__slider_ospara">AimaLinux OS 8</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="os__sliderwrapper">
+                            <div class="os__slider_content">
+                                <img src="../images/alpine_logo.svg" alt="alpine_logo" class="os__slider_logoimg">
+                                <div class="os__slider_description">
+                                    <h2 class="os__slider_heading">Alpine</h2>
+                                    <div class="os__slider_hrline"></div>
+                                    <p class="os__slider_versionpara">Version</p>
+                                    <p class="os__slider_ospara">Alpine 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="os__sliderwrapper">
+                            <div class="os__slider_content">
+                                <img src="../images/centos_logo.svg" alt="centos_logo" class="os__slider_logoimg">
+                                <div class="os__slider_description">
+                                    <h2 class="os__slider_heading">CentOS</h2>
+                                    <div class="os__slider_hrline"></div>
+                                    <p class="os__slider_versionpara">Version</p>
+                                    <p class="os__slider_ospara">CentOS 8</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="os__sliderwrapper">
+                            <div class="os__slider_content">
+                                <img src="../images/ipxe_logo.svg" alt="ipxe_logo" class="os__slider_logoimg--ipxe">
+                                <div class="os__slider_description">
+                                    <h2 class="os__slider_heading">Custom iPXE</h2>
+                                    <div class="os__slider_hrline"></div>
+                                    <p class="os__slider_versionpara">Version</p>
+                                    <p class="os__slider_ospara">Custom iPXE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="os__sliderwrapper">
+                            <div class="os__slider_content">
+                                <img src="../images/ipxe_logo.svg" alt="ipxe_logo" class="os__slider_logoimg--ipxe">
+                                <div class="os__slider_description">
+                                    <h2 class="os__slider_heading">Custom iPXE</h2>
+                                    <div class="os__slider_hrline"></div>
+                                    <p class="os__slider_versionpara">Version</p>
+                                    <p class="os__slider_ospara">Custom iPXE</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="os__sliderwrapper">
+                            <div class="os__slider_content">
+                                <img src="../images/Aima.png" alt="aima_logo" class="os__slider_logoimg" id="aima_img">
+                                <div class="os__slider_description">
+                                    <h2 class="os__slider_heading">Aima</h2>
+                                    <div class="os__slider_hrline"></div>
+                                    <p class="os__slider_versionpara">Version</p>
+                                    <p class="os__slider_ospara">AimaLinux OS 8</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="os__sliderwrapper">
+                            <div class="os__slider_content">
+                                <img src="../images/alpine_logo.svg" alt="alpine_logo" class="os__slider_logoimg">
+                                <div class="os__slider_description">
+                                    <h2 class="os__slider_heading">Alpine</h2>
+                                    <div class="os__slider_hrline"></div>
+                                    <p class="os__slider_versionpara">Version</p>
+                                    <p class="os__slider_ospara">Alpine 3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="os__sliderwrapper">
+                            <div class="os__slider_content">
+                                <img src="../images/centos_logo.svg" alt="centos_logo" class="os__slider_logoimg">
+                                <div class="os__slider_description">
+                                    <h2 class="os__slider_heading">CentOS</h2>
+                                    <div class="os__slider_hrline"></div>
+                                    <p class="os__slider_versionpara">Version</p>
+                                    <p class="os__slider_ospara">CentOS 8</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="os__sliderwrapper">
+                            <div class="os__slider_content">
+                                <img src="../images/ipxe_logo.svg" alt="ipxe_logo" class="os__slider_logoimg--ipxe">
+                                <div class="os__slider_description">
+                                    <h2 class="os__slider_heading">Custom iPXE</h2>
+                                    <div class="os__slider_hrline"></div>
+                                    <p class="os__slider_versionpara">Version</p>
+                                    <p class="os__slider_ospara">Custom iPXE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="os__sliderwrapper">
+                            <div class="os__slider_content">
+                                <img src="../images/ipxe_logo.svg" alt="ipxe_logo" class="os__slider_logoimg--ipxe">
+                                <div class="os__slider_description">
+                                    <h2 class="os__slider_heading">Custom iPXE</h2>
+                                    <div class="os__slider_hrline"></div>
+                                    <p class="os__slider_versionpara">Version</p>
+                                    <p class="os__slider_ospara">Custom iPXE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel code end -->
+                    <p class="os__content_selectedos">Selected : <span>Aima (AimaLinux OS 8)</span></p>
+                </div>
+                <!-- nav arrow -->
+                <div class="os__slider_nextarrow">
+                    <span class="fa fa-angle-right"></span>
+                </div>
+                <div class="os__slider_prevarrow">
+                    <span class="fa fa-angle-left"></span>
+                </div>
+            </div>
+        </div>
+    <!-- OS changes end -->
+
+    <!-- Select OS changes start -->
+        <div class="selectos">
+            <div class="selectos__block container">
+                <img src="../images/logo.svg" alt="logo" class="logo_img">
+                <div class="selectos__block-selectgroup">
+                    <select name="selectos__block-select" id="selectos__block-selectloc" class="selectos__block-select">
+                        <option value="product">Product Type</option>
+                        <option value="product">Product Type</option>
+                        <option value="product">Product Type</option>
+                    </select>
+                    <select name="selectos__block-select" id="selectos__block-selectbilling" class="selectos__block-select">
+                        <option value="Location">Location</option>
+                        <option value="Location">Location</option>
+                        <option value="Location">Location</option>
+                    </select>
+                </div>
+                <div class="selectos__content">
+                    <h2 class="selectos__content_heading">Select Your Operating System</h2>
+                    <ul class="selectos__content_filter-list">
+                        <li><button class="selectos__content_filterbtn" onclick="selectos_btn()">Popular(4)</button></li>
+                        <li><button class="selectos__content_filterbtn" onclick="selectos_btn()">For Containers</button></li>
+                        <li><button class="selectos__content_filterbtn" onclick="selectos_btn()">VMWare/ESXi(1)</button></li>
+                        <li><button class="selectos__content_filterbtn--all" id="active_btn2" onclick="selectos_btn_all()">Licensed(2)</button></li>
+                        <li><button class="selectos__content_filterbtn" onclick="selectos_btn()">All(13)</button></li>
+                    </ul>
+                    <div class="selectos__content_version">
+                        <div class="selectos__content_version-contentone">
+                            <div class="selectos__content_version-pills">Lincensed</div>
+                            <h3 class="selectos__content_version-contentone_heading">Windows</h3>
+                            <h4 class="selectos__content_version-contentone_subheading">os version</h4>
+                            <select name="osversion_contentone" id="osversion_contentone" class="selectos__content_version-selectversion">
+                                <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
+                                <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
+                                <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
+                            </select>
+                        </div>
+                        <div class="selectos__content_version-contenttwo">
+                            <div class="selectos__content_version-pills">Lincensed</div>
+                            <h3 class="selectos__content_version-contenttwo_heading">Windows</h3>
+                            <h4 class="selectos__content_version-contenttwo_subheading">os version</h4>
+                            <select name="osversion_contenttwo" id="osversion_contenttwo" class="selectos__content_version-selectversion">
+                                <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
+                                <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
+                                <option value="redhatlinux8">RedHat Enterprise Linux8 </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Select OS changes end -->
+
+    <!-- My cart start -->
+        <div class="mycart">
+            <img src="../images/logo.svg" alt="logo" class="logo_img_resetpass">
+            <div class="mycart__block">
+                <div class="mycart__block-left">
+                    <form action="#" class="mycart__form">
+                        <label for="email" class="mycart__form-label">My Cart</label>
+                        <textarea class="mycart__form-field" name="sku_name" id="sku_name" placeholder="SKU Name"></textarea>
+                        <label for="qunantity" class="mycart__form-label--ql">Quantity 
+                            <button class="ql-btn">&plus;</button>
+                            <span>1</span>
+                            <button class="ql-btn">&minus;</button>
+                        </label>
+                        <select name="mycart__form-select" id="mycart__form-selectloc" class="mycart__form-select">
+                            <option value="location">Location</option>
+                            <option value="location">Location</option>
+                            <option value="location">Location</option>
+                        </select>
+                        <select name="mycart__form-select" id="mycart__form-selectbilling" class="mycart__form-select">
+                            <option value="Billing Type">Billing Type</option>
+                            <option value="Billing Type">Billing Type</option>
+                            <option value="Billing Type">Billing Type</option>
+                        </select>
+                        <label for="plan" class="mycart__form-label--plan">Plan</label>
+                        <div class="mycart__form-btngroup">
+                            <button class="plan-btn">20$ <span>per month</span></button>
+                            <button class="plan-btn">150$ <span>six month</span></button>
+                            <button class="plan-btn">250$ <span>per year</span></button>
+                        </div>
+                        <div class="mycart__form-discount">
+                            <label for="discount">After Discount</label>
+                            <span>147$</span>
+                        </div>
+                        <div class="mycart__form-breakline"></div>
+                        <div class="mycart__form-total">
+                            <label for="discount">Total Price</label>
+                            <span>147$</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="mycart__block-right"><img  src="../images/my_cartpng.png" alt="my_cart"></div>
+            </div>  
+        </div>
+    <!-- My cart end -->
+
+    <!-- My server start -->
+        <div class="myserver">
+            <img src="../images/logo.svg" alt="logo" class="logo_img_resetpass">
+            <div class="myserver__block">
+                <div class="myserver__block-left">
+                    <form action="#" class="myserver__form">
+                        <label for="email" class="myserver__form-label">My Server</label>
+                        <input type="text" class="myserver__form-field_id" placeholder="Package ID">
+                        <textarea class="myserver__form-field" name="sku_name" id="sku_name" placeholder="SKU Name"></textarea>
+                        <label for="qunantity" class="myserver__form-label--ql">Quantity 
+                            <button class="ql-btn">&plus;</button>
+                            <span>1</span>
+                            <button class="ql-btn">&minus;</button>
+                        </label>
+                        <div class="myserver__form-selectgroup">
+                            <select name="myserver__form-select" id="myserver__form-selectloc" class="myserver__form-select">
+                                <option value="location">DC Location</option>
+                                <option value="location">DC Location</option>
+                                <option value="location">DC Location</option>
+                            </select>
+                            <select name="myserver__form-select" id="myserver__form-selectbilling" class="myserver__form-select">
+                                <option value="Billing Type">Billing Type</option>
+                                <option value="Billing Type">Billing Type</option>
+                                <option value="Billing Type">Billing Type</option>
+                            </select>
+                        </div>
+                        <label for="plan" class="myserver__form-label--plan">Plan</label>
+                        <div class="myserver__form-btngroup">
+                            <button class="plan-btn">20$ <span>per month</span></button>
+                            <button class="plan-btn">150$ <span>six month</span></button>
+                            <button class="plan-btn">250$ <span>per year</span></button>
+                        </div>
+                        <div class="myserver__form-discount">
+                            <label for="discount">After Discount</label>
+                            <span>147$</span>
+                        </div>
+                        <div class="myserver__form-breakline"></div>
+                        <div class="myserver__form-total">
+                            <label for="discount">Total Price</label>
+                            <span>147$</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="myserver__block-right"><img  src="../images/my_server1.png" alt="my_serverpng"></div>
+            </div>  
+        </div>
+    <!-- My server end -->
+
+    <!-- Server cart start -->
+        <div class="server-cart">
+            <img src="../images/logo.svg" alt="logo" class="logo_img_resetpass">
+            <table class="server-cart__billing-table">
+                <thead>
+                    <tr>
+                        <th>Sr.No</th>
+                        <th>SKU Name</th>
+                        <th>Quantity</th>
+                        <th>Location</th>
+                        <th>Billing Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="sr_num">1</td>
+                        <td>
+                            <div class="server_name">11th Gen Intel&#174; Core&#8482; i5-11320H (8 MB cache, 4 cores)</div>
+                        </td>
+                        <td>
+                            <button class="ql-btn">&plus;</button>
+                            <span class="ql-btn--span">1</span>
+                            <button class="ql-btn">&minus;</button>
+                        </td>
+                        <td>
+                            <select name="location" id="billing-table__selectloc" class="billing-table__select">
+                                <option value="location">DC Location</option>
+                                <option value="location">DC Location</option>
+                                <option value="location">DC Location</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="billing-type">20$ <span>Six months</span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sr_num">2</td>
+                        <td>
+                            <div class="server_name">11th Gen Intel&#174; Core&#8482; i5-11320H (8 MB cache, 4 cores)</div>
+                        </td>
+                        <td>
+                            <button class="ql-btn">&plus;</button>
+                            <span class="ql-btn--span">4</span>
+                            <button class="ql-btn">&minus;</button>
+                        </td>
+                        <td>
+                            <select name="location" id="billing-table__selectloc" class="billing-table__select">
+                                <option value="location">DC Location</option>
+                                <option value="location">DC Location</option>
+                                <option value="location">DC Location</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="billing-type">35$ <span>For year</span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sr_num">3</td>
+                        <td>
+                            <div class="server_name">11th Gen Intel&#174; Core&#8482; i5-11320H (8 MB cache, 4 cores)</div>
+                        </td>
+                        <td>
+                            <button class="ql-btn">&plus;</button>
+                            <span class="ql-btn--span">2</span>
+                            <button class="ql-btn">&minus;</button>
+                        </td>
+                        <td>
+                            <select name="location" id="billing-table__selectloc" class="billing-table__select">
+                                <option value="location">DC Location</option>
+                                <option value="location">DC Location</option>
+                                <option value="location">DC Location</option>
+                            </select>
+                        </td>
+                        <td>
+                            <div class="billing-type">5$ <span>One month</span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <!-- Server cart end -->
+
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Owl Carousel -->
