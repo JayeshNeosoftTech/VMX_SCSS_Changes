@@ -1509,11 +1509,6 @@ span.fa.fa-angle-left {
     margin: 28px 52px 25px;
   }
 }
-@media (max-width: 425px) {
-  .plan__blocktwo .starter-plan__startbtn {
-    padding: 9px 15px;
-  }
-}
 .plan__blocktwo .starter-plan.active_plan {
   background-color: #FFFFFF;
   transform: scale(1.172, 1.123);

@@ -149,9 +149,6 @@
                     padding: 9px 36px;
                     margin: 28px 52px 25px;
                 }
-                 @include breakpoint(mobile-l) {
-                    padding: 9px 15px;
-                }
             }
             &.active_plan{
                 background-color: #FFFFFF;
