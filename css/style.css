@@ -2176,15 +2176,18 @@ span.fa.fa-angle-left {
 }
 .register__block-right {
   align-self: center;
+  width: 661px;
+  height: 456px;
+}
+.register__block-right img {
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 991px) {
   .register__block-right {
     background-color: transparent;
     margin-top: 45px;
     width: 95%;
-  }
-  .register__block-right img {
-    width: 100%;
   }
 }
 .register__block-left {
@@ -2197,6 +2200,11 @@ span.fa.fa-angle-left {
   align-self: center;
   padding: 24px 54px 33px;
   margin-left: 8%;
+}
+@media (max-width: 1280px) {
+  .register__block-left {
+    margin-left: 5%;
+  }
 }
 @media (max-width: 991px) {
   .register__block-left {
@@ -2321,7 +2329,6 @@ span.fa.fa-angle-left {
   margin: 34.5px 0px 0px;
   display: flex;
   flex-wrap: nowrap;
-  /* height: fit-content; */
   width: 100%;
   justify-content: space-between;
 }
@@ -2333,15 +2340,19 @@ span.fa.fa-angle-left {
 }
 .mycart__block-right {
   align-self: flex-end;
+  width: 726px;
+  height: 500px;
+}
+.mycart__block-right img {
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 991px) {
   .mycart__block-right {
     background-color: transparent;
     margin-top: 45px;
     width: 95%;
-  }
-  .mycart__block-right img {
-    width: 100%;
+    height: auto;
   }
 }
 .mycart__block-left {
@@ -2355,6 +2366,11 @@ span.fa.fa-angle-left {
   padding: 20px 52px 40px;
   margin-bottom: 45px;
   margin-left: 8%;
+}
+@media (max-width: 1280px) {
+  .mycart__block-left {
+    margin-left: 5%;
+  }
 }
 @media (max-width: 991px) {
   .mycart__block-left {
@@ -2624,7 +2640,6 @@ span.fa.fa-angle-left {
   margin: 34.5px 0px 0px;
   display: flex;
   flex-wrap: nowrap;
-  /* height: fit-content; */
   width: 100%;
   justify-content: space-between;
 }
@@ -2636,15 +2651,18 @@ span.fa.fa-angle-left {
 }
 .myserver__block-right {
   align-self: flex-end;
+  width: 726px;
+  height: 500px;
+}
+.myserver__block-right img {
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 991px) {
   .myserver__block-right {
     background-color: transparent;
     margin-top: 45px;
     width: 95%;
-  }
-  .myserver__block-right img {
-    width: 100%;
   }
 }
 .myserver__block-left {
@@ -2658,6 +2676,11 @@ span.fa.fa-angle-left {
   padding: 20px 52px 40px;
   margin-bottom: 45px;
   margin-left: 10%;
+}
+@media (max-width: 1280px) {
+  .myserver__block-left {
+    margin-left: 5%;
+  }
 }
 @media (max-width: 991px) {
   .myserver__block-left {
@@ -2963,6 +2986,8 @@ span.fa.fa-angle-left {
   text-align: center;
   border-collapse: collapse;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
 }
 .server-cart__billing-table thead th {
   padding: 16px 30px;
