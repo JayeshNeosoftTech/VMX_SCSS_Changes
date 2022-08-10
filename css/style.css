@@ -2188,6 +2188,7 @@ span.fa.fa-angle-left {
     background-color: transparent;
     margin-top: 45px;
     width: 95%;
+    height: auto;
   }
 }
 .register__block-left {
@@ -2663,6 +2664,7 @@ span.fa.fa-angle-left {
     background-color: transparent;
     margin-top: 45px;
     width: 95%;
+    height: auto;
   }
 }
 .myserver__block-left {
